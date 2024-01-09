@@ -1,0 +1,66 @@
+div.header {
+    background: #232323;
+    width: 83%;
+    height: fit-content;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 7%;
+    display: flex;
+    box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5), 10px 0 10px -5px rgba(0, 0, 0, 0.5);
+    margin-top: 1%;
+
+    div.me-frame {
+        img.me {
+            width: 128px;
+            height: 128px;
+            border-radius: 128px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    div.me-bio {
+        padding-left: 20px;
+        padding-top: 15px;
+        color: #FFF;
+
+        h1.my-name {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin: 0;
+            margin-top: -8px;
+        }
+      
+        h3.developer {
+            margin: 0;
+        }
+      
+        p.description {
+            padding-top: 5px;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.header {
+        height: fit-content;
+        width: 97%;
+        padding-top: 53px;
+        padding-bottom: 53px;
+        padding-left: 3%;
+        display: block;
+        
+        div.me-frame {
+            text-align: center;
+
+            img.me {
+                width: 256px;
+                height: 256px;
+            }
+        }
+
+        div.me-bio {
+            width: 90%;
+        }
+    }
+}
