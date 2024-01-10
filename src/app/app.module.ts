@@ -5,6 +5,8 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ExpertiseComponent } from './views/expertise/expertise.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { ExpertiseComponent } from './views/expertise/expertise.component';
     HeaderComponent,
     NavigationComponent,
     ExpertiseComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { ExpertiseComponent } from './views/expertise/expertise.component';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
