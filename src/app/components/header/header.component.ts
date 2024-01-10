@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  
   myAge(): number {
     const birthday: Date = new Date('1999-12-14');
     const today: Date = new Date();
@@ -18,6 +19,7 @@ export class HeaderComponent {
 
     return age;
   }
+
   collegePeriod(): string {
     const startedCollege: Date = new Date('2022-01-01');
     const today: Date = new Date();
@@ -42,4 +44,5 @@ export class HeaderComponent {
       return "I have a degree in Information System from UNA"
     }
   }
+
 }

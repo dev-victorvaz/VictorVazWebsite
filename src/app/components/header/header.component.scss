@@ -1,14 +1,19 @@
+@use '@angular/material' as mat;
+
+// Use the default configuration.
+$my-typography: mat.define-typography-config();
+@include mat.typography-hierarchy($my-typography);
+
 div.header {
-    background: #232323;
-    width: 83%;
+    background: #3f51b5;
+    width: 93%;
     height: fit-content;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 7%;
     display: flex;
-    box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5), 10px 0 10px -5px rgba(0, 0, 0, 0.5);
-    margin-top: 1%;
+    margin-top: 7vh;
 
     div.me-frame {
         img.me {
@@ -21,7 +26,7 @@ div.header {
 
     div.me-bio {
         padding-left: 20px;
-        padding-top: 15px;
+        padding-top: 23px;
         color: #FFF;
 
         h1.my-name {

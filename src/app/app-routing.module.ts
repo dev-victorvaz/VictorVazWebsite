@@ -3,10 +3,12 @@ import { RouterModule, RouterStateSnapshot, Routes, TitleStrategy } from '@angul
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 import { HomeComponent } from './views/home/home.component';
 import { Title } from '@angular/platform-browser';
+import { ExpertiseComponent } from './views/expertise/expertise.component';
 
 const routes: Routes = [
   {path: '', title: 'Home', component: HomeComponent},
-  {path: '**', title: 'Page not found', component: PageNotFoundComponent}
+  {path: 'expertise', title: 'Expertise', component: ExpertiseComponent},
+  {path: '**', title: 'Page not found', component: PageNotFoundComponent},
 ];
 
 @Injectable({providedIn: 'root'})
