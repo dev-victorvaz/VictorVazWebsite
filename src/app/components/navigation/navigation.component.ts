@@ -10,7 +10,7 @@ export class NavigationComponent {
   constructor(private router: Router) { }
 
   navigateToHome() {
-    this.router.navigate(['/'], { fragment: 'contact' });
+    this.router.navigate(['/']);
   }
 
   navigateToExpertise() {
