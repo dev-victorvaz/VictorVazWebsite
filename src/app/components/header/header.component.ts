@@ -1,23 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { GetAgeService } from 'src/app/services/get-age.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-  
-  myAge(): number {
-    const birthday: Date = new Date('1999-12-14');
-    const today: Date = new Date();
+export class HeaderComponent implements OnInit {
+  constructor(private getAgeService: GetAgeService) { }
 
-    let age: number = today.getFullYear() - birthday.getFullYear();
+  ngOnInit(): void { }
 
-    if (today.getMonth() < birthday.getMonth() || (today.getMonth() === birthday.getMonth() && today.getDate() < birthday.getDate())) {
-      age--;
-    }
-
-    return age;
+  getAge(): number {
+    return this.getAgeService.getAge()
   }
 
   collegePeriod(): string {
