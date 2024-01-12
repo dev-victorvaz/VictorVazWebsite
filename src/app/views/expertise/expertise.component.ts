@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PageTitleService } from 'src/app/services/page-title.service';
 
 @Component({
   selector: 'app-expertise',
   templateUrl: './expertise.component.html',
   styleUrls: ['./expertise.component.scss']
 })
-export class ExpertiseComponent {
+export class ExpertiseComponent implements OnInit {
+  constructor(
+    private pageTitle: PageTitleService
+  ) { }
+
+  ngOnInit(): void {
+    this.pageTitle.setPageTitle("Expertise");
+  }
+
   openSqlCertificate(): void {
     window.open("https://drive.google.com/file/d/1M5gMYE0-4gY_jqdDpTeAqbGvjmAfy5s_/view?usp=sharing", '_blank');
   }

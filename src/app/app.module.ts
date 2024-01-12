@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ExpertiseComponent } from './views/expertise/expertise.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GitHubComponent } from './views/github/github.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,9 @@ import { FooterComponent } from './components/footer/footer.component';
     NavigationComponent,
     ExpertiseComponent,
     FooterComponent,
+    GitHubComponent,
+    ContactComponent,
+    PageHeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatIconModule,
     MatCardModule,
     MatDividerModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

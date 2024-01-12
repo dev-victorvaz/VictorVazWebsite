@@ -16,5 +16,13 @@ export class NavigationComponent {
   navigateToExpertise() {
     this.router.navigate(['/expertise']);
   }
+
+  navigateToGitHub() {
+    this.router.navigate(['/github']);
+  }
+
+  navigateToContact() {
+    this.router.navigate(['/contact']);
+  }
   
 }

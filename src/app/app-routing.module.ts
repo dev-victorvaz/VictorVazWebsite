@@ -4,10 +4,14 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { HomeComponent } from './views/home/home.component';
 import { Title } from '@angular/platform-browser';
 import { ExpertiseComponent } from './views/expertise/expertise.component';
+import { GitHubComponent } from './views/github/github.component';
+import { ContactComponent } from './views/contact/contact.component';
 
 const routes: Routes = [
   {path: '', title: 'Home', component: HomeComponent},
   {path: 'expertise', title: 'Expertise', component: ExpertiseComponent},
+  {path: 'github', title: 'GitHub', component:GitHubComponent},
+  {path: 'contact', title: 'Contact', component:ContactComponent},
   {path: '**', title: 'Page not found', component: PageNotFoundComponent},
 ];
 

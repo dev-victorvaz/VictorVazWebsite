@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GetAgeService } from 'src/app/services/get-age.service';
+import { AgeService } from 'src/app/services/age.service';
+import { CollegeStatusService } from 'src/app/services/college-status.service';
 
 @Component({
   selector: 'app-header',
@@ -7,37 +8,18 @@ import { GetAgeService } from 'src/app/services/get-age.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  constructor(private getAgeService: GetAgeService) { }
+  constructor(
+    private ageService: AgeService,
+    private collegeStatus: CollegeStatusService) { }
 
   ngOnInit(): void { }
 
   getAge(): number {
-    return this.getAgeService.getAge()
+    return this.ageService.getAge();
   }
 
-  collegePeriod(): string {
-    const startedCollege: Date = new Date('2022-01-01');
-    const today: Date = new Date();
-    const endCollege: Date = new Date('2025-07-15');
-
-    let aux;
-
-    let period: number = 1;
-    if (today < endCollege) {
-      aux = today.getFullYear() - startedCollege.getFullYear();
-      for (aux; aux >= 0; aux--) {
-        period += 1;
-      }
-
-      aux = today.getMonth() - startedCollege.getMonth();
-      if (aux <= 7) {
-        period++;
-      }
-
-      return `student in the ${period}th period of Information Systems at UNA`;
-    } else {
-      return "I have a degree in Information System from UNA"
-    }
+  getCollegeStatus(): string {
+    return this.collegeStatus.getCollegeStatus();
   }
 
 }

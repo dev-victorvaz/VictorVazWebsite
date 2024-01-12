@@ -9,13 +9,14 @@ div.header {
     width: 93%;
     height: fit-content;
     margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 8.8vh;
+    padding-bottom: 1.8vh;
     padding-left: 7%;
     display: flex;
-    margin-top: 7vh;
     position: relative;
     overflow: hidden;
+    border-bottom: 1px;
+    color: rgb(14, 31, 123);
 
     div.me-frame {
         img.me {
@@ -45,17 +46,17 @@ div.header {
             padding-top: 5px;
             margin: 0;
         }
-    }
 
-    img.background-image {
-        position: absolute;
-        opacity: 0.3;
-        height: 250px;
-        width: 250px;
-        overflow: hidden;
-        left: 70%;
-        top: -25%;
-        transform: rotate(-15deg);
+        img.background-image {
+            position: absolute;
+            opacity: 0.3;
+            height: 250px;
+            width: 250px;
+            overflow: hidden;
+            left: 70%;
+            top: 0;
+            transform: rotate(-15deg);
+        }
     }
 }
 
@@ -63,22 +64,28 @@ div.header {
     div.header {
         height: fit-content;
         width: 97%;
-        padding-top: 53px;
-        padding-bottom: 53px;
+        padding-top: 1.8vh;
+        padding-bottom: 3vh;
         padding-left: 3%;
         display: block;
+        margin-top: 0;
         
         div.me-frame {
             text-align: center;
 
             img.me {
-                width: 256px;
-                height: 256px;
+                width: 128px;
+                height: 128px;
+                border-radius: 32px;
             }
         }
 
         div.me-bio {
             width: 90%;
+
+            img.background-image {
+                left: 75%
+            }
         }
     }
 }

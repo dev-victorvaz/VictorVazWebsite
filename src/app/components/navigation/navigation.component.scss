@@ -14,3 +14,9 @@ div.navigation {
         margin-left: 8px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    div.navigation {
+        bottom: 0;
+    }
+}
