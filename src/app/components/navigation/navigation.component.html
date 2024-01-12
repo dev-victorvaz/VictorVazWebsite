@@ -1,13 +1,13 @@
 <div class="navigation">
-    <button mat-flat-button color="primary" (click)="navigateToHome()">
+    <button mat-flat-button color="primary" routerLink="/">
         <mat-icon>home</mat-icon>
         Home
     </button>
 
-    <button mat-flat-button color="primary" (click)="navigateToExpertise()">Expertise</button>
+    <button mat-flat-button color="primary" routerLink="expertise" routerLinkActive="active-link">Expertise</button>
 
-    <button mat-flat-button color="primary" (click)="navigateToGitHub()">GitHub</button>
+    <button mat-flat-button color="primary" routerLink="github" routerLinkActive="active-link">GitHub</button>
 
-    <button mat-flat-button color="primary" (click)="navigateToContact()">Contact</button>
+    <button mat-flat-button color="primary" routerLink="contact" routerLinkActive="active-link">Contact</button>
 
 </div>

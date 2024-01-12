@@ -33,6 +33,10 @@ div.page-header {
 @media only screen and (max-width: 768px) {
     div.page-header {
         padding-top: 1.8vh;
+
+        img.page-header-background-image {
+            left: 75%;
+        }
     }
 
 }

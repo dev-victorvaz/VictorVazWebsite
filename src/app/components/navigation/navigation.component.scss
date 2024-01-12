@@ -13,6 +13,10 @@ div.navigation {
     button {
         margin-left: 8px;
     }
+
+    .active-link {
+        background:rgba(0, 0, 0, .2)
+    }
 }
 
 @media only screen and (max-width: 768px) {
