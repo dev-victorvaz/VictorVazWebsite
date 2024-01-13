@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { PageTitleService } from 'src/app/services/page-title.service';
 
 @Component({
-  selector: 'app-expertise',
-  templateUrl: './expertise.component.html',
-  styleUrls: ['./expertise.component.scss']
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss']
 })
-export class ExpertiseComponent implements OnInit {
+export class SkillsComponent implements OnInit {
   constructor(
     private pageTitle: PageTitleService
   ) { }
 
   ngOnInit(): void {
-    this.pageTitle.setPageTitle("Expertise");
+    this.pageTitle.setPageTitle("Skills");
   }
 
   openSqlCertificate(): void {

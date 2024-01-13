@@ -1,4 +1,32 @@
 <app-page-header></app-page-header>
 
 <div class="page-body">
+    <p class="page-text">
+        You can reach me through my email or social medias or sending a message directly using the form below.<br>
+        <a href="mailto:contact@victorvaz.com" class="contact-email">contact&#64;victorvaz.com</a>
+    </p>
+    
+    <div class="contact-icons-div">
+        <a href="https://www.linkedin.com/in/dev-victorvaz/" target="_blank"><img src="/assets/images/linkedin.svg" alt="LinkedIn" class="contact-icons"></a>
+        <a href="https://www.facebook.com/dev.victorvaz" target="_blank"><img src="/assets/images/facebook.svg" alt="Facebook" class="contact-icons"></a>
+        <a href="https://www.instagram.com/dev_victorvaz/" target="_blank"><img src="/assets/images/instagram.svg" alt="Instagram" class="contact-icons"></a>
+        <a href="https://www.youtube.com/@dev-victorvaz" target="_blank"><img src="/assets/images/youtube.svg" alt="YouTube" class="contact-icons"></a>
+    </div> 
+    <br>
+
+    <div class="form-div">
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Title</mat-label>
+              <input matInput type="text" [(ngModel)]="value" placeholder="Ex. Good morning, Victor">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <mat-label>Leave your message</mat-label>
+              <textarea matInput placeholder="Ex. I wanted to contact you to..."></textarea>
+            </mat-form-field>
+
+            <button mat-raised-button>Send</button>
+          </form>  
+    </div>
 </div>

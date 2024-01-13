@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { PageTitleService } from 'src/app/services/page-title.service';
 
 @Component({
-  selector: 'app-github',
-  templateUrl: './github.component.html',
-  styleUrls: ['./github.component.scss']
+  selector: 'app-portfolio',
+  templateUrl: './portfolio.component.html',
+  styleUrls: ['./portfolio.component.scss']
 })
-export class GitHubComponent implements OnInit {
+export class PortfolioComponent implements OnInit {
   constructor(
     private pageTitle: PageTitleService
   ) { }
 
   ngOnInit(): void {
-    this.pageTitle.setPageTitle("GitHub");
+    this.pageTitle.setPageTitle("Portfolio");
   }
 
 }

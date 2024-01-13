@@ -15,4 +15,6 @@ export class ContactComponent implements OnInit {
     this.pageTitle.setPageTitle("Contact");
   }
 
+  value:string = 'Clear me'
+
 }

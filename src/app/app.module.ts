@@ -8,6 +8,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,9 +19,9 @@ import { HomeComponent } from './views/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { ExpertiseComponent } from './views/expertise/expertise.component';
+import { SkillsComponent } from './views/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { GitHubComponent } from './views/github/github.component';
+import { PortfolioComponent } from './views/portfolio/portfolio.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 
@@ -29,9 +32,9 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
     HomeComponent,
     HeaderComponent,
     NavigationComponent,
-    ExpertiseComponent,
+    SkillsComponent,
     FooterComponent,
-    GitHubComponent,
+    PortfolioComponent,
     ContactComponent,
     PageHeaderComponent,
   ],
@@ -46,7 +49,10 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
     MatCardModule,
     MatDividerModule,
     MatProgressBarModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

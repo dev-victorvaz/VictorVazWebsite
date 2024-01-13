@@ -26,7 +26,7 @@ export class CollegeStatusService {
         period++;
       }
 
-      return `student in the ${period}th period of Information Systems at UNA`;
+      return `studying Information Systems at UNA (currently ${period}th)`;
     } else {
       return "I have a degree in Information System from UNA"
     }

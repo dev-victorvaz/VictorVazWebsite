@@ -13,20 +13,18 @@
     height: 150px;
 }
 
-div.expertises {
+div.skills {
     display: flex;
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 
-    div.expertise-item {
+    div.skill-item {
         height: fit-content;
         display: inline;
 
-        img.expertise-item-image {
-            width: 64px;
-            height: 64px;
+        img.item-image {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
 

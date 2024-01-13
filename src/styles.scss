@@ -9,3 +9,13 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+div.page-body {
+    margin-left: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+    p.page-text {
+        color: #0000008a;
+    }
+}

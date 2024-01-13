@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GitHubComponent } from './github.component';
+import { SkillsComponent } from './skills.component';
 
-describe('GitHubComponent', () => {
-  let component: GitHubComponent;
-  let fixture: ComponentFixture<GitHubComponent>;
+describe('SkillsComponent', () => {
+  let component: SkillsComponent;
+  let fixture: ComponentFixture<SkillsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GitHubComponent]
+      declarations: [SkillsComponent]
     });
-    fixture = TestBed.createComponent(GitHubComponent);
+    fixture = TestBed.createComponent(SkillsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
