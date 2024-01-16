@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PageTitleService } from 'src/app/services/page-title.service';
+import { HeaderTitleService } from 'src/app/services/header-title.service';
 
 @Component({
   selector: 'app-page-header',
@@ -9,10 +9,10 @@ import { PageTitleService } from 'src/app/services/page-title.service';
 
 export class PageHeaderComponent {
   constructor(
-    private pageTitle: PageTitleService
+    private headerTitle: HeaderTitleService
   ) { }
 
   getPageTitle(): string {
-    return this.pageTitle.getPageTitle();
+    return this.headerTitle.getHeaderTitle();
   }
 }

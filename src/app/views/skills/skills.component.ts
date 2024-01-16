@@ -1,18 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { PageTitleService } from 'src/app/services/page-title.service';
+import { Title } from '@angular/platform-browser';
+import { HeaderTitleService } from 'src/app/services/header-title.service';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
-  constructor(
-    private pageTitle: PageTitleService
-  ) { }
+export class SkillsComponent {
+  title = 'Skills'
 
-  ngOnInit(): void {
-    this.pageTitle.setPageTitle("Skills");
+  constructor(
+    private headerTitle: HeaderTitleService,
+    private titleService: Title
+  ) {
+    this.headerTitle.setHeaderTitle($localize`${this.title}`);
+    this.titleService.setTitle($localize`Victor Vaz - ${this.title}`);
   }
 
   openSqlCertificate(): void {

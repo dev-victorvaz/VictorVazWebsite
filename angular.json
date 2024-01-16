@@ -4,6 +4,18 @@
   "newProjectRoot": "projects",
   "projects": {
     "victor-vaz": {
+      "i18n": {
+        "sourceLocale": {
+          "code": "en",
+          "baseHref": ""
+        },
+        "locales": {
+          "pt": {
+            "translation": "src/locale/messages.pt.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +29,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
             "outputPath": "dist/victor-vaz",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,7 +46,8 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "i18nMissingTranslation": "error"
           },
           "configurations": {
             "production": {
@@ -52,6 +66,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "localize": false,
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -64,6 +79,9 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "pt": {
+              "localize": ["pt"]
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +94,9 @@
             },
             "development": {
               "buildTarget": "victor-vaz:build:development"
+            },
+            "pt": {
+              "buildTarget": "victor-vaz:build:development,pt"
             }
           },
           "defaultConfiguration": "development"

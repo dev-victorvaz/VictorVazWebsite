@@ -1,7 +1,7 @@
 <app-page-header></app-page-header>
 
 <div class="page-body">
-    <p class="page-text">
+    <p class="page-text" i18n>
         You can reach me through my email or social medias or sending a message directly using the form below.<br>
         <a href="mailto:contact@victorvaz.com" class="contact-email">contact&#64;victorvaz.com</a>
     </p>
@@ -17,13 +17,13 @@
     <div class="form-div">
         <form class="example-form">
             <mat-form-field class="example-full-width">
-              <mat-label>Title</mat-label>
-              <input matInput type="text" [(ngModel)]="value" placeholder="Ex. Good morning, Victor">
+              <mat-label i18n>Title</mat-label>
+              <input matInput type="text" [(ngModel)]="value" placeholder="Ex. Good morning, Victor" i18n-placeholder>
             </mat-form-field>
           
             <mat-form-field class="example-full-width">
-              <mat-label>Leave your message</mat-label>
-              <textarea matInput placeholder="Ex. I wanted to contact you to..."></textarea>
+              <mat-label i18n>Leave your message</mat-label>
+              <textarea matInput placeholder="Ex. I wanted to contact you to..." i18n-placeholder></textarea>
             </mat-form-field>
 
             <button mat-raised-button>Send</button>

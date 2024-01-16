@@ -8,11 +8,11 @@ import { PortfolioComponent } from './views/portfolio/portfolio.component';
 import { ContactComponent } from './views/contact/contact.component';
 
 const routes: Routes = [
-  {path: '', title: 'Home', component: HomeComponent},
-  {path: 'skills', title: 'Skills', component: SkillsComponent},
-  {path: 'portfolio', title: 'Portfolio', component:PortfolioComponent},
-  {path: 'contact', title: 'Contact', component:ContactComponent},
-  {path: '**', title: 'Page not found', component: PageNotFoundComponent},
+  {path: '', component: HomeComponent},
+  {path: 'skills', component: SkillsComponent},
+  {path: 'portfolio', component:PortfolioComponent},
+  {path: 'contact', component:ContactComponent},
+  {path: '**', title: $localize`Page not Found`, component: PageNotFoundComponent},
 ];
 
 @Injectable({providedIn: 'root'})

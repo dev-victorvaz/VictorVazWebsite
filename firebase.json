@@ -1,17 +1,16 @@
 {
   "hosting": {
-    "site": "victor-vaz",
-    "public": "dist/victor-vaz",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "i18n": {
+      "root": "/"
+    },
+    "frameworksBackend": {
+      "region": "us-west1"
+    }
   }
 }

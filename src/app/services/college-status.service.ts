@@ -26,9 +26,9 @@ export class CollegeStatusService {
         period++;
       }
 
-      return `studying Information Systems at UNA (currently ${period}th)`;
+      return $localize`studying Information Systems at UNA (currently ${period}th)`;
     } else {
-      return "I have a degree in Information System from UNA"
+      return $localize`I have a degree in Information System from UNA`;
     }
   }
   

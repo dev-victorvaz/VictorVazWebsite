@@ -3,18 +3,18 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class PageTitleService {
+export class HeaderTitleService {
 
   constructor() { }
 
   private pageTitle: string = '';
 
-  setPageTitle(title:string):void {
+  setHeaderTitle(title:string):void {
     this.pageTitle = title;
   }
 
-  getPageTitle(): string {
-    return this.pageTitle;
+  getHeaderTitle(): string {
+    return $localize`${this.pageTitle}`;
   }
 
 }
