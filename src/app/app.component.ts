@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-/*
+
 import { Meta } from '@angular/platform-browser';
 import { AgeService } from './services/age.service';
 import { CollegeStatusService } from './services/college-status.service';
-*/
 
 @Component({
   selector: 'app-root',
@@ -11,8 +10,7 @@ import { CollegeStatusService } from './services/college-status.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // Waiting for Firebase Integrate Angular Universal get more developed
-  /*
+
   constructor(
     private meta: Meta,
     private ageService: AgeService,
@@ -34,5 +32,5 @@ export class AppComponent {
         {name: 'twitter:image', content: 'https://www.victorvaz.com/assets/images/victor-vaz.jpg'}
       ]);
     }
-    */
+
 }
