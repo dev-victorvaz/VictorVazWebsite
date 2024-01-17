@@ -30,3 +30,9 @@ div.form-div {
         margin-right: 86%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    div.contact-icons-div {
+        margin-left: 4vh;
+    }
+}

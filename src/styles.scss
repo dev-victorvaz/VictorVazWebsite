@@ -23,6 +23,10 @@ div.page-body {
 @media only screen and (max-width: 768px) {
     div.page-body {
         margin-top: 10vh;
-        margin-left: 4vh;
+        margin-left: 0;
+
+        p.page-text {
+            margin-left: 4vh;
+        }
     }
 }

@@ -57,10 +57,10 @@ div.header {
 @media only screen and (max-width: 768px) {
     div.header {
         height: fit-content;
-        width: 100%;
         padding-bottom: 3vh;
         padding-left: 1.8vh;
         display: block;
+        margin-top: 10vh;
         
         div.me-frame {
             text-align: center;
@@ -74,10 +74,6 @@ div.header {
 
         div.me-bio {
             width: 90%;
-
-            img.background-image {
-                left: 75%
-            }
         }
     }
 }

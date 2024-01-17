@@ -19,3 +19,17 @@ div.videos-structure {
         }
     }
 }
+
+.only-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    div.page-body {
+        margin-top: 1.8vh;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+}

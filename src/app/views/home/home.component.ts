@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { HeaderTitleService } from 'src/app/services/header-title.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,11 @@ import { Title } from '@angular/platform-browser';
 export class HomeComponent {
   title = 'Home';
 
-  constructor(private titleService: Title) {
+  constructor(
+    private headerTitle: HeaderTitleService,
+    private titleService: Title
+  ) {
+    this.headerTitle.setHeaderTitle($localize`${this.title}`);
     this.titleService.setTitle($localize`Victor Vaz - ${this.title}`);
   }
 }

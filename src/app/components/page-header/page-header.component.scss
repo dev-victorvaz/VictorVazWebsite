@@ -15,17 +15,6 @@ div.page-header {
         margin-top: 3vh;
     }
 
-    img.page-header-background-image {
-        position: absolute;
-        opacity: 0.3;
-        height: 250px;
-        width: 250px;
-        overflow: hidden;
-        left: 70%;
-        top: 0;
-        transform: rotate(-15deg);
-    }
-
 }
 
 @media only screen and (max-width: 768px) {

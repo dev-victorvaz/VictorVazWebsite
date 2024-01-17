@@ -92,6 +92,10 @@
           <context context-type="linenumber">17</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/home/home.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/page-not-found/page-not-found.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
@@ -147,7 +151,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/home/home.component.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.ts</context>
