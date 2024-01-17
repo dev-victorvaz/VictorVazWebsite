@@ -10,7 +10,6 @@ import { CollegeStatusService } from './services/college-status.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
   constructor(
     private meta: Meta,
     private ageService: AgeService,

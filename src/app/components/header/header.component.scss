@@ -6,12 +6,11 @@ $my-typography: mat.define-typography-config();
 
 div.header {
     /* background: rgba(63, 81, 181, 1); */
-    width: 93%;
     height: fit-content;
     margin: auto;
     margin-top: 1.8vh;
     padding-bottom: 1.8vh;
-    padding-left: 15vh;
+    padding-left: 16vh;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -52,29 +51,16 @@ div.header {
             margin: 0;
             color: #0000008a;
         }
-
-        img.background-image {
-            position: absolute;
-            opacity: 0.3;
-            height: 250px;
-            width: 250px;
-            overflow: hidden;
-            left: 70%;
-            top: 0;
-            transform: rotate(-15deg);
-        }
     }
 }
 
 @media only screen and (max-width: 768px) {
     div.header {
         height: fit-content;
-        width: 97%;
-        padding-top: 1.8vh;
+        width: 75%;
         padding-bottom: 3vh;
-        padding-left: 3%;
+        padding-left: 13.8vh;
         display: block;
-        margin-top: 0;
         
         div.me-frame {
             text-align: center;

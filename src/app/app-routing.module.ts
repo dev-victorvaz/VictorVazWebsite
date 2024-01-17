@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'skills', component: SkillsComponent},
   {path: 'portfolio', component:PortfolioComponent},
   {path: 'contact', component:ContactComponent},
-  {path: '**', title: $localize`Page not Found`, component: PageNotFoundComponent},
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 @Injectable({providedIn: 'root'})

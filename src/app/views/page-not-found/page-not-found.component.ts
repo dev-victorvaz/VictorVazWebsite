@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { HeaderTitleService } from 'src/app/services/header-title.service';
 
 @Component({
   selector: 'app-page-not-found',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./page-not-found.component.scss']
 })
 export class PageNotFoundComponent {
+  title = 'Error 404'
 
+  constructor(
+    private headerTitle: HeaderTitleService,
+    private titleService: Title
+  ) {
+    this.headerTitle.setHeaderTitle($localize`${this.title}`);
+    this.titleService.setTitle($localize`${this.title} - Page not Found`);
+  }
 }
