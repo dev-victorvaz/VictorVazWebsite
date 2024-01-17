@@ -1,5 +1,4 @@
 footer {
-    /* background: #3f51b5; */
     width: 100%;
     border-top: 1px solid #f1f1f1;
 
@@ -11,5 +10,11 @@ footer {
 @media only screen and (max-width: 768px) {
     div.page-body {
         margin-top: 1.8vh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        border-top: 1px solid #323232;
     }
 }

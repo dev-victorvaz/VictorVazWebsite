@@ -1,5 +1,5 @@
 div.page-header {
-    background: white;
+    background: black;
     height: fit-content;
     margin: auto;
     margin-top: 1.8vh;
@@ -10,7 +10,8 @@ div.page-header {
     overflow: hidden;
     border-bottom: 1px solid #f1f1f1;
 
-    h2.page-title, p.page-description {
+    h2.page-title,
+    p.page-description {
         margin-left: 4vh;
         margin-top: 3vh;
     }
@@ -26,4 +27,11 @@ div.page-header {
         z-index: 2;
     }
 
+}
+
+@media (prefers-color-scheme: dark) {
+    div.page-header {
+        background-color: rgba(15, 15, 17, 1);
+        border-bottom: 1px solid #323232;
+    }
 }
