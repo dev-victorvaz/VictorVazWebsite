@@ -2,24 +2,15 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="272190774691672010" datatype="html">
-        <source>Page not Found</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="7339601549834842070" datatype="html">
         <source>© 2024 by Victor Vaz</source>
-        <target>© 2024 por Victor Vaz</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4513704550431982162" datatype="html">
         <source>Developer</source>
-        <target>Desenvolvedor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
           <context context-type="linenumber">7</context>
@@ -32,39 +23,48 @@
           <context context-type="linenumber">9,11</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8542691915737953469" datatype="html">
-        <source>Coding Monitor</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6544292891804316575" datatype="html">
-        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>home<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Home </source>
+      <trans-unit id="923132155497689318" datatype="html">
+        <source><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>home<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Home<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
-          <context context-type="linenumber">3,5</context>
+          <context context-type="linenumber">5,8</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="4342625008558026850" datatype="html">
-        <source>Skills</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="linenumber">41,44</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9201103587777813545" datatype="html">
-        <source>Portfolio</source>
+      <trans-unit id="6107309224189361669" datatype="html">
+        <source><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>description<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Skills<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
+          <context context-type="linenumber">48,51</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7922989125096435449" datatype="html">
-        <source>Contact</source>
+      <trans-unit id="3659844906976687878" datatype="html">
+        <source><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>dashboard<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Portfolio<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">19,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
+          <context context-type="linenumber">55,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5990237178536956715" datatype="html">
+        <source><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>contact_page<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Contact<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
+          <context context-type="linenumber">26,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navigation/navigation.component.html</context>
+          <context context-type="linenumber">62,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2428494521036797219" datatype="html">
@@ -89,6 +89,10 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/contact/contact.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/page-not-found/page-not-found.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
         <context-group purpose="location">
@@ -151,6 +155,20 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6338007892751689042" datatype="html">
+        <source> Page not found. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7756454452758534584" datatype="html">
+        <source><x id="PH" equiv-text="this.title"/> - Page not Found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/page-not-found/page-not-found.component.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>

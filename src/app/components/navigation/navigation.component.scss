@@ -36,3 +36,69 @@ div.navigation {
         color: rgb(14, 31, 123);
     }
 }
+
+button.navigation-toggle {
+    display: none;
+    position: fixed;
+    top: 1.8vh;
+    left: 3vh;
+    z-index: 3;
+}
+
+div.navigation-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    button.navigation-toggle {
+        display: block;
+    }
+
+    div.navigation {
+        display: none;
+    }
+
+    .mobile-hidden {
+        transform: translateX(-100%);
+    }
+
+    div.navigation-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        width: 12vh;
+        height: 100%;
+        z-index: 2;
+        transition: transform 0.3s ease-out;
+    
+        li {
+            list-style: none;
+        }
+    
+        ul {
+            padding-left: 0;
+        }
+    
+        button {
+            transition: 0.5s;
+            color: #0000008a;
+            width: 100%;
+            height: 10vh;
+            margin-bottom: 10px;
+            border-radius: 0;
+        }
+    
+        button.active-link {
+            /* background:rgba(0, 0, 0, .2); */
+            border-left: 2px solid #3f51b5;
+            color: rgb(14, 31, 123);
+        }
+    
+        button:hover {
+            color: rgb(14, 31, 123);
+        }
+    }
+}

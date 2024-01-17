@@ -1,5 +1,5 @@
 div.page-header {
-    /* background: rgba(63, 81, 181, 1); */
+    background: white;
     height: fit-content;
     margin: auto;
     margin-top: 1.8vh;
@@ -30,11 +30,11 @@ div.page-header {
 
 @media only screen and (max-width: 768px) {
     div.page-header {
-        padding-top: 1.8vh;
-
-        img.page-header-background-image {
-            left: 75%;
-        }
+        position: fixed;
+        margin-top: -0.6vh;
+        padding-left: 6.8vh;
+        width: 100%;
+        z-index: 2;
     }
 
 }
