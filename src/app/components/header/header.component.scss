@@ -5,18 +5,17 @@ $my-typography: mat.define-typography-config();
 @include mat.typography-hierarchy($my-typography);
 
 div.header {
-    background: rgba(63, 81, 181, 1);
+    /* background: rgba(63, 81, 181, 1); */
     width: 93%;
     height: fit-content;
     margin: auto;
-    padding-top: 8.8vh;
+    margin-top: 1.8vh;
     padding-bottom: 1.8vh;
-    padding-left: 7%;
+    padding-left: 15vh;
     display: flex;
     position: relative;
     overflow: hidden;
-    border-bottom: 1px;
-    color: rgb(14, 31, 123);
+    border-bottom: 1px solid #f1f1f1;
 
     div.me-frame {
         img.me {
@@ -30,21 +29,28 @@ div.header {
     div.me-bio {
         padding-left: 20px;
         padding-top: 23px;
-        color: #FFF;
 
         h1.my-name {
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(to right, #ff4081, #3f51b5);
+            background-clip: text;
+            width: fit-content;
+            color: transparent;
             margin: 0;
             margin-top: -8px;
         }
       
         h3.developer {
+            background: linear-gradient(to right, #ff4081, #3f51b5);
+            background-clip: text;
+            width: fit-content;
+            color: transparent;
             margin: 0;
+            margin-top: 10px;
         }
       
         p.description {
-            padding-top: 5px;
             margin: 0;
+            color: #0000008a;
         }
 
         img.background-image {

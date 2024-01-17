@@ -1,0 +1,21 @@
+div.videos-structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div.videos-container {
+        display: block;
+        text-align: center;
+        width: 800px;
+        position: relative;
+
+        div.video-element {
+            display: inline-block;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            margin: 3px;
+        }
+    }
+}

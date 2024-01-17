@@ -1,22 +1,39 @@
 div.navigation {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 7vh;
-    background-color: #3f51b5;
+    background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position: fixed;
-    width: 100%;
+    width: 12vh;
+    height: 100%;
     z-index: 2;
 
+    li {
+        list-style: none;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
     button {
-        margin-left: 8px;
         transition: 0.5s;
+        color: #0000008a;
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 10px;
+        border-radius: 0;
     }
 
     button.active-link {
-        background:rgba(0, 0, 0, .2);
+        /* background:rgba(0, 0, 0, .2); */
+        border-left: 2px solid #3f51b5;
+        color: rgb(14, 31, 123);
+    }
+
+    button:hover {
+        color: rgb(14, 31, 123);
     }
 }
 

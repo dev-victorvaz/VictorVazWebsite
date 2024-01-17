@@ -24,7 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
-import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -58,7 +58,7 @@ import { HttpClientModule, provideHttpClient } from '@angular/common/http';
   ],
   providers: [
     provideClientHydration(),
-    provideHttpClient()
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

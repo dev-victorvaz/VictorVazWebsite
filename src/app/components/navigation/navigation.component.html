@@ -1,13 +1,30 @@
 <div class="navigation">
-    <button mat-flat-button color="primary" routerLink="/" i18n>
-        <mat-icon>home</mat-icon>
-        Home
+    <button mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" i18n>
+        <ul>
+            <li><mat-icon>home</mat-icon></li>
+            <li>Home</li>
+        </ul>
     </button>
 
-    <button mat-flat-button color="primary" routerLink="skills" routerLinkActive="active-link" i18n>Skills</button>
+    <button mat-button routerLink="skills" routerLinkActive="active-link" i18n>
+        <ul>
+            <li><mat-icon>description</mat-icon></li>
+            <li>Skills</li>
+        </ul>
+    </button>
 
-    <button mat-flat-button color="primary" routerLink="portfolio" routerLinkActive="active-link" i18n>Portfolio</button>
+    <button mat-button routerLink="portfolio" routerLinkActive="active-link" i18n>
+        <ul>
+            <li><mat-icon>dashboard</mat-icon></li>
+            <li>Portfolio</li>
+        </ul>
+    </button>
 
-    <button mat-flat-button color="primary" routerLink="contact" routerLinkActive="active-link" i18n>Contact</button>
+    <button mat-button routerLink="contact" routerLinkActive="active-link" i18n>
+        <ul>
+            <li><mat-icon>contact_page</mat-icon></li>
+            <li>Contact</li>
+        </ul>
+    </button>
 
 </div>
