@@ -10,7 +10,7 @@ $my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 // The "warn" palette is optional and defaults to red if not specified.
 $my-warn: mat.define-palette(mat.$red-palette);
 
-$my-theme: mat.define-light-theme((
+$theme-light: mat.define-light-theme((
  color: (
    primary: $my-primary,
    accent: $my-accent,
@@ -20,7 +20,7 @@ $my-theme: mat.define-light-theme((
  density: 0,
 ));
 
-$my-theme-dark: mat.define-dark-theme((
+$theme-dark: mat.define-dark-theme((
  color: (
    primary: $my-primary,
    accent: $my-accent,
@@ -30,7 +30,7 @@ $my-theme-dark: mat.define-dark-theme((
  density: 0,
 ));
 
-@include mat.all-component-themes($my-theme);
+@include mat.all-component-themes($theme-light);
 
 html, body {
     height: 100%;
@@ -67,7 +67,7 @@ div.page-body {
 @media (prefers-color-scheme: dark) {
     // Use the `-color` mixins to only apply color styles without reapplying the same
     // typography and density styles.
-    @include mat.all-component-themes($my-theme-dark);
+    @include mat.all-component-themes($theme-dark);
 
     html, body {
         background-color: rgba(15, 15, 17, 1);
