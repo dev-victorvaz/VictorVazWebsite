@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid var(--color-div-border);
 
     div.page-body {
         padding-bottom: 1.5vh;
@@ -10,11 +10,5 @@ footer {
 @media only screen and (max-width: 768px) {
     div.page-body {
         margin-top: 1.8vh;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    footer {
-        border-top: 1px solid #323232;
     }
 }

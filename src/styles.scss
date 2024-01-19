@@ -10,31 +10,37 @@ $my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 // The "warn" palette is optional and defaults to red if not specified.
 $my-warn: mat.define-palette(mat.$red-palette);
 
-$theme-light: mat.define-light-theme((
- color: (
-   primary: $my-primary,
-   accent: $my-accent,
-   warn: $my-warn,
- ),
- typography: mat.define-typography-config(),
- density: 0,
-));
+$theme-light: mat.define-light-theme((color: (primary: $my-primary,
+                accent: $my-accent,
+                warn: $my-warn,
+            ),
+            typography: mat.define-typography-config(),
+            density: 0,
+        ));
 
-$theme-dark: mat.define-dark-theme((
- color: (
-   primary: $my-primary,
-   accent: $my-accent,
-   warn: $my-warn,
- ),
- typography: mat.define-typography-config(),
- density: 0,
-));
+$theme-dark: mat.define-dark-theme((color: (primary: $my-primary,
+                accent: $my-accent,
+                warn: $my-warn,
+            ),
+            typography: mat.define-typography-config(),
+            density: 0,
+        ));
 
-@include mat.all-component-themes($theme-light);
+:root,
+:root.light {
+    @include mat.all-component-themes($theme-light);
 
-html, body {
+    --color-bg: white;
+    --color-page-text: #0000008a;
+    --color-page-header: black;
+    --color-div-border: #f1f1f1;
+    --color-accent: rgb(14, 31, 123);
+}
+
+html,
+body {
     height: 100%;
-    background-color: white;
+    background-color: var(--color-bg);
 }
 
 body {
@@ -49,7 +55,7 @@ div.page-body {
     margin-bottom: 3vh;
 
     p.page-text {
-        color: #0000008a;
+        color: var(--color-page-text);
     }
 }
 
@@ -65,17 +71,24 @@ div.page-body {
 }
 
 @media (prefers-color-scheme: dark) {
-    // Use the `-color` mixins to only apply color styles without reapplying the same
-    // typography and density styles.
+    :root,
+    :root.dark {
+        @include mat.all-component-themes($theme-dark);
+        
+        --color-bg: rgba(15, 15, 17, 1);
+        --color-page-text: rgba(160, 160, 160, 1);
+        --color-page-header: white;
+        --color-div-border: #323232;
+        --color-accent: #ff4081;
+    }
+}
+
+:root.dark {
     @include mat.all-component-themes($theme-dark);
 
-    html, body {
-        background-color: rgba(15, 15, 17, 1);
-    }
-
-    div.page-body {
-        p.page-text {
-            color: rgba(160, 160, 160, 1);
-        }
-    }
-   }
+    --color-bg: rgba(15, 15, 17, 1);
+    --color-page-text: rgba(160, 160, 160, 1);
+    --color-page-header: white;
+    --color-div-border: #323232;
+    --color-accent: #ff4081;
+}
