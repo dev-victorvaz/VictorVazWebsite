@@ -7,6 +7,22 @@ footer {
     }
 }
 
+button.language-button {
+    color: var(--color-page-text);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    top: -1vh;
+    right: 4vh;
+}
+
 @media only screen and (max-width: 768px) {
     div.page-body {
         margin-top: 1.8vh;

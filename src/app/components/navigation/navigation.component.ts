@@ -13,6 +13,7 @@ export class NavigationComponent implements OnInit {
   private themeSwitchToggler: boolean = false;
   private navigationBottom!: HTMLElement;
   private navigationMobileBottom!: HTMLElement;
+  private navigationToggle!: HTMLElement;
 
   constructor(
     private renderer: Renderer2,
@@ -25,6 +26,7 @@ export class NavigationComponent implements OnInit {
     this.themeSwitch = this.el.nativeElement.querySelector('#themeSwitchId');
     this.navigationBottom = this.el.nativeElement.querySelector('#navigationBottomId');
     this.navigationMobileBottom = this.el.nativeElement.querySelector('#navigationMobileBottomId');
+    this.navigationToggle = this.el.nativeElement.querySelector('#navigationToggleId');
   }
 
   toggleDarkMode(): void {
@@ -42,9 +44,18 @@ export class NavigationComponent implements OnInit {
   toggleMobileMenu(): void {
     if (this.mobileMenuToggler) {
       this.hideElement();
+      this.renderer.removeClass(this.navigationToggle, 'navigation-toggle-active');
+
+      if (this.themeSwitchToggler) {
+        this.hideThemeSwitch();
+        this.renderer.removeClass(this.navigationBottom, 'active-link');
+        this.renderer.removeClass(this.navigationMobileBottom, 'active-link');
+        this.themeSwitchToggler = !this.themeSwitchToggler;
+      }
     }
     else {
       this.showElement();
+      this.renderer.addClass(this.navigationToggle, 'navigation-toggle-active');
     }
     this.mobileMenuToggler = !this.mobileMenuToggler;
   }
@@ -57,7 +68,7 @@ export class NavigationComponent implements OnInit {
     this.renderer.addClass(this.myElement, 'mobile-hidden');
   }
 
-  toggleThemeSwitch():void {
+  toggleThemeSwitch(): void {
     if (this.themeSwitchToggler) {
       this.hideThemeSwitch();
       this.renderer.removeClass(this.navigationBottom, 'active-link');
@@ -69,7 +80,7 @@ export class NavigationComponent implements OnInit {
     }
     this.themeSwitchToggler = !this.themeSwitchToggler;
   }
-  
+
   showThemeSwitch() {
     this.renderer.setStyle(this.themeSwitch, 'opacity', '1');
     this.renderer.setStyle(this.themeSwitch, 'pointer-events', 'all');
@@ -79,5 +90,5 @@ export class NavigationComponent implements OnInit {
     this.renderer.setStyle(this.themeSwitch, 'opacity', '0');
     this.renderer.setStyle(this.themeSwitch, 'pointer-events', 'none');
   }
-  
+
 }
