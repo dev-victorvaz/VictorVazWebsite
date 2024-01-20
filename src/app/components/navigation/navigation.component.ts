@@ -7,7 +7,7 @@ import { ThemeService } from 'src/app/services/theme.service';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  private myElement!: HTMLElement;
+  private navigationMobile!: HTMLElement;
   private mobileMenuToggler: boolean = false;
   private themeSwitch!: HTMLElement;
   private themeSwitchToggler: boolean = false;
@@ -22,7 +22,7 @@ export class NavigationComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.myElement = this.el.nativeElement.querySelector('#myElementId');
+    this.navigationMobile = this.el.nativeElement.querySelector('#navigationMobileId');
     this.themeSwitch = this.el.nativeElement.querySelector('#themeSwitchId');
     this.navigationBottom = this.el.nativeElement.querySelector('#navigationBottomId');
     this.navigationMobileBottom = this.el.nativeElement.querySelector('#navigationMobileBottomId');
@@ -43,7 +43,7 @@ export class NavigationComponent implements OnInit {
 
   toggleMobileMenu(): void {
     if (this.mobileMenuToggler) {
-      this.hideElement();
+      this.hideNavigationMobile();
       this.renderer.removeClass(this.navigationToggle, 'navigation-toggle-active');
 
       if (this.themeSwitchToggler) {
@@ -54,18 +54,18 @@ export class NavigationComponent implements OnInit {
       }
     }
     else {
-      this.showElement();
+      this.showNavigationMobile();
       this.renderer.addClass(this.navigationToggle, 'navigation-toggle-active');
     }
     this.mobileMenuToggler = !this.mobileMenuToggler;
   }
 
-  showElement() {
-    this.renderer.removeClass(this.myElement, 'mobile-hidden');
+  showNavigationMobile() {
+    this.renderer.removeClass(this.navigationMobile, 'mobile-hidden');
   }
 
-  hideElement() {
-    this.renderer.addClass(this.myElement, 'mobile-hidden');
+  hideNavigationMobile() {
+    this.renderer.addClass(this.navigationMobile, 'mobile-hidden');
   }
 
   toggleThemeSwitch(): void {
