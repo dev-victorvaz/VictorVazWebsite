@@ -31,7 +31,7 @@ $theme-dark: mat.define-dark-theme((color: (primary: $my-primary,
     @include mat.all-component-themes($theme-light);
 
     --color-bg: white;
-    --color-page-text: #0000008a;
+    --color-page-text: rgb(117, 117, 117);
     --color-page-header: black;
     --color-div-border: #f1f1f1;
     --color-accent: rgb(14, 31, 123);

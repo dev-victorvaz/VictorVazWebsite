@@ -12,6 +12,7 @@ export class NavigationComponent implements OnInit {
   private themeSwitch!: HTMLElement;
   private themeSwitchToggler: boolean = false;
   private navigationBottom!: HTMLElement;
+  private navigationMobileBottom!: HTMLElement;
 
   constructor(
     private renderer: Renderer2,
@@ -23,6 +24,7 @@ export class NavigationComponent implements OnInit {
     this.myElement = this.el.nativeElement.querySelector('#myElementId');
     this.themeSwitch = this.el.nativeElement.querySelector('#themeSwitchId');
     this.navigationBottom = this.el.nativeElement.querySelector('#navigationBottomId');
+    this.navigationMobileBottom = this.el.nativeElement.querySelector('#navigationMobileBottomId');
   }
 
   toggleDarkMode(): void {
@@ -58,10 +60,12 @@ export class NavigationComponent implements OnInit {
   toggleThemeSwitch():void {
     if (this.themeSwitchToggler) {
       this.hideThemeSwitch();
-      this.renderer.removeClass(this.navigationBottom, 'active-link-bottom');
+      this.renderer.removeClass(this.navigationBottom, 'active-link');
+      this.renderer.removeClass(this.navigationMobileBottom, 'active-link');
     } else {
       this.showThemeSwitch();
-      this.renderer.addClass(this.navigationBottom, 'active-link-bottom');
+      this.renderer.addClass(this.navigationBottom, 'active-link');
+      this.renderer.addClass(this.navigationMobileBottom, 'active-link');
     }
     this.themeSwitchToggler = !this.themeSwitchToggler;
   }
