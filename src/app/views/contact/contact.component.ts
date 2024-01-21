@@ -18,6 +18,4 @@ export class ContactComponent {
     this.titleService.setTitle($localize`Victor Vaz - ${this.title}`);
   }
 
-  value: string = ''
-
 }

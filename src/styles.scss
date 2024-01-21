@@ -26,8 +26,7 @@ $theme-dark: mat.define-dark-theme((color: (primary: $my-primary,
             density: 0,
         ));
 
-:root,
-:root.light {
+@mixin theme-light() {
     @include mat.all-component-themes($theme-light);
 
     --color-bg: white;
@@ -36,6 +35,22 @@ $theme-dark: mat.define-dark-theme((color: (primary: $my-primary,
     --color-div-border: #f1f1f1;
     --color-primary: rgb(14, 31, 123);
     --color-primary-hover: rgb(0, 15, 99);
+}
+
+@mixin theme-dark () {
+    @include mat.all-component-colors($theme-dark);
+
+    --color-bg: rgba(15, 15, 17, 1);
+    --color-page-text: rgba(160, 160, 160, 1);
+    --color-page-header: white;
+    --color-div-border: #323232;
+    --color-primary: #ff4081;
+    --color-primary-hover: #fa276d;
+}
+
+:root,
+:root.light {
+    @include theme-light();
 }
 
 html,
@@ -74,24 +89,10 @@ div.page-body {
 @media (prefers-color-scheme: dark) {
     :root,
     :root.dark {
-        @include mat.all-component-themes($theme-dark);
-        
-        --color-bg: rgba(15, 15, 17, 1);
-        --color-page-text: rgba(160, 160, 160, 1);
-        --color-page-header: white;
-        --color-div-border: #323232;
-        --color-primary: #ff4081;
-        --color-primary-hover: #fa276d;
+        @include theme-dark();
     }
 }
 
 :root.dark {
-    @include mat.all-component-themes($theme-dark);
-
-    --color-bg: rgba(15, 15, 17, 1);
-    --color-page-text: rgba(160, 160, 160, 1);
-    --color-page-header: white;
-    --color-div-border: #323232;
-    --color-primary: #ff4081;
-    --color-primary-hover: #fa276d;
+    @include theme-dark();
 }

@@ -14,6 +14,7 @@ export class NavigationComponent implements OnInit {
   private navigationBottom!: HTMLElement;
   private navigationMobileBottom!: HTMLElement;
   private navigationToggle!: HTMLElement;
+  private pageContent!: HTMLElement;
 
   constructor(
     private renderer: Renderer2,
@@ -27,6 +28,7 @@ export class NavigationComponent implements OnInit {
     this.navigationBottom = this.el.nativeElement.querySelector('#navigationBottomId');
     this.navigationMobileBottom = this.el.nativeElement.querySelector('#navigationMobileBottomId');
     this.navigationToggle = this.el.nativeElement.querySelector('#navigationToggleId');
+    this.pageContent = this.el.nativeElement.querySelector('#pageContent');
   }
 
   toggleDarkMode(): void {
@@ -44,6 +46,7 @@ export class NavigationComponent implements OnInit {
   toggleMobileMenu(): void {
     if (this.mobileMenuToggler) {
       this.hideNavigationMobile();
+      this.turnOffPageContent();
       this.renderer.removeClass(this.navigationToggle, 'navigation-toggle-active');
 
       if (this.themeSwitchToggler) {
@@ -55,16 +58,17 @@ export class NavigationComponent implements OnInit {
     }
     else {
       this.showNavigationMobile();
+      this.turnOnPageContent();
       this.renderer.addClass(this.navigationToggle, 'navigation-toggle-active');
     }
     this.mobileMenuToggler = !this.mobileMenuToggler;
   }
 
-  showNavigationMobile() {
+  showNavigationMobile():void {
     this.renderer.removeClass(this.navigationMobile, 'mobile-hidden');
   }
 
-  hideNavigationMobile() {
+  hideNavigationMobile():void {
     this.renderer.addClass(this.navigationMobile, 'mobile-hidden');
   }
 
@@ -81,14 +85,27 @@ export class NavigationComponent implements OnInit {
     this.themeSwitchToggler = !this.themeSwitchToggler;
   }
 
-  showThemeSwitch() {
+  showThemeSwitch():void {
     this.renderer.setStyle(this.themeSwitch, 'opacity', '1');
     this.renderer.setStyle(this.themeSwitch, 'pointer-events', 'all');
   }
 
-  hideThemeSwitch() {
+  hideThemeSwitch():void {
     this.renderer.setStyle(this.themeSwitch, 'opacity', '0');
     this.renderer.setStyle(this.themeSwitch, 'pointer-events', 'none');
   }
 
+  handleTouchStart(event: TouchEvent): void {
+    if (this.mobileMenuToggler) {
+      this.toggleMobileMenu()
+    }
+  }
+
+  turnOnPageContent():void {
+    this.renderer.removeClass(this.pageContent, 'page-content-off');
+  }
+
+  turnOffPageContent():void {
+    this.renderer.addClass(this.pageContent, 'page-content-off');
+  }
 }
