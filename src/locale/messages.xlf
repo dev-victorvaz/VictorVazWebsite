@@ -2,6 +2,18 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="3990998756952109083" datatype="html">
+        <source>I am <x id="PH" equiv-text="this.ageService.getAge()"/> years old, <x id="PH_1" equiv-text="this.collegeStatusService.getCollegeStatus()"/> and
+        I&apos;m very happy to be part of technology area.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="copyright" datatype="html">
         <source>© 2024 by Victor Vaz</source>
         <context-group purpose="location">
@@ -160,33 +172,6 @@
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1737753151350322492" datatype="html">
-        <source><x id="PH" equiv-text="this.pageTitle"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/services/header-title.service.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/contact/contact.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/home/home.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/page-not-found/page-not-found.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/skills/skills.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="contactDescription" datatype="html">
         <source> You can reach me through my email or social medias or sending a message directly using the form below.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:contact@victorvaz.com&quot; class=&quot;contact-email&quot;&gt;"/>contact@victorvaz.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
         <context-group purpose="location">
@@ -241,25 +226,6 @@
         <note priority="1" from="description">Send button for the form</note>
         <note priority="1" from="meaning">Send button</note>
       </trans-unit>
-      <trans-unit id="5554269107908372710" datatype="html">
-        <source>Victor Vaz - <x id="PH" equiv-text="this.title"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/contact/contact.component.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/home/home.component.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/skills/skills.component.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
         <source> Get to know me more through YouTube Shorts on my channel: </source>
         <context-group purpose="location">
@@ -278,13 +244,6 @@
         <note priority="1" from="description">Page not found text</note>
         <note priority="1" from="meaning">Page not found</note>
       </trans-unit>
-      <trans-unit id="7756454452758534584" datatype="html">
-        <source><x id="PH" equiv-text="this.title"/> - Page not Found</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/page-not-found/page-not-found.component.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="portfolioDescription" datatype="html">
         <source> Have a look at my repositories in the link below: <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dev-victorvaz&quot; target=&quot;_blank&quot;&gt;"/>github.com/dev-victorvaz<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
         <context-group purpose="location">
@@ -294,38 +253,56 @@
         <note priority="1" from="description">Portfolio initial description</note>
         <note priority="1" from="meaning">Portfolio description</note>
       </trans-unit>
-      <trans-unit id="firstEGrejaExplanation" datatype="html">
-        <source> This project was done at UniBH using Angular and Firebase. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> In this project has home weekly schedule, members, dashboard and login pages, take a look: </source>
+      <trans-unit id="projectEGrejaTitle" datatype="html">
+        <source>Project E-greja</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">20,24</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Project E-greja title</note>
+        <note priority="1" from="meaning">Project E-greja title</note>
+      </trans-unit>
+      <trans-unit id="firstEGrejaExplanation" datatype="html">
+        <source> This project was done at UniBH using Angular and Firebase and the project has home, weekly agenda, members, dashboard and login pages, take a look: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">20,22</context>
         </context-group>
         <note priority="1" from="description">First paragraph explanation for the project E-greja</note>
         <note priority="1" from="meaning">E-greja first paragraph explanation</note>
       </trans-unit>
       <trans-unit id="secondEGrejaExplanation" datatype="html">
-        <source> You can acess the website using the link below: </source>
+        <source> You can access the website via the link below: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">41,43</context>
+          <context context-type="linenumber">39,41</context>
         </context-group>
         <note priority="1" from="description">Second paragraph explanation for the project E-greja</note>
         <note priority="1" from="meaning">E-greja second paragraph explanation</note>
       </trans-unit>
       <trans-unit id="thirdEGrejaExplanation" datatype="html">
-        <source> Acess de source code using the link below: </source>
+        <source> Access de source code via the link below: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">46,48</context>
+          <context context-type="linenumber">44,46</context>
         </context-group>
         <note priority="1" from="description">Third paragraph explanation for the project E-greja</note>
         <note priority="1" from="meaning">E-greja third paragraph explanation</note>
       </trans-unit>
-      <trans-unit id="3248857024731713608" datatype="html">
-        <source> Here an project that I draw the Brazil&apos;s flag using only HTML and CSS. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> See the details in: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dev-victorvaz/brazilsflag&quot; target=&quot;_blank&quot;&gt;"/>github.com/dev-victorvaz/brazilsflag<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+      <trans-unit id="projectBrazilsFlagTitle" datatype="html">
+        <source>Brazil&apos;s Flag</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">57,61</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">Project Brazil&apos;s Flag title</note>
+        <note priority="1" from="meaning">Project Brazil&apos;s Flag title</note>
+      </trans-unit>
+      <trans-unit id="1475857214087070569" datatype="html">
+        <source> Here is a project where I designed the Brazilian flag using just HTML and CSS. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> See the details in: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dev-victorvaz/brazilsflag&quot; target=&quot;_blank&quot;&gt;"/>github.com/dev-victorvaz/brazilsflag<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">55,59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skillsDescription" datatype="html">

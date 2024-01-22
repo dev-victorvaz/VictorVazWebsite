@@ -8,13 +8,13 @@ import { HeaderTitleService } from 'src/app/services/header-title.service';
   styleUrls: ['./page-not-found.component.scss']
 })
 export class PageNotFoundComponent {
-  title = 'Error 404'
+  title = 'Error 404';
 
   constructor(
     private headerTitle: HeaderTitleService,
     private titleService: Title
   ) {
-    this.headerTitle.setHeaderTitle($localize`${this.title}`);
-    this.titleService.setTitle($localize`${this.title} - Page not Found`);
+    this.headerTitle.setHeaderTitle(`${this.title}`);
+    this.titleService.setTitle(`${this.title} - Page not Found`);
   }
 }

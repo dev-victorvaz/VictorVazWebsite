@@ -8,14 +8,24 @@ import { HeaderTitleService } from 'src/app/services/header-title.service';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-  title = 'Skills'
+  title = 'Skills';
+  titlePt = 'Habilidades'
+  currentLanguage:string = '';
+  portugueseLanguage:string = 'pt';
 
   constructor(
     private headerTitle: HeaderTitleService,
     private titleService: Title
   ) {
-    this.headerTitle.setHeaderTitle($localize`${this.title}`);
-    this.titleService.setTitle($localize`Victor Vaz - ${this.title}`);
+    this.currentLanguage = navigator.language;
+    if (this.currentLanguage.includes(this.portugueseLanguage)) {
+      this.headerTitle.setHeaderTitle(this.titlePt);
+      this.titleService.setTitle(`Victor Vaz - ${this.titlePt}`);
+    }
+    else {
+      this.headerTitle.setHeaderTitle(this.title);
+      this.titleService.setTitle(`Victor Vaz - ${this.title}`);
+    }
   }
 
   openSqlCertificate(): void {

@@ -14,7 +14,7 @@ export class HeaderTitleService {
   }
 
   getHeaderTitle(): string {
-    return $localize`${this.pageTitle}`;
+    return this.pageTitle;
   }
 
 }

@@ -8,14 +8,14 @@ import { HeaderTitleService } from 'src/app/services/header-title.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  title = 'Contact'
+  title = 'Contact';
 
   constructor(
     private headerTitle: HeaderTitleService,
     private titleService: Title
   ) {
-    this.headerTitle.setHeaderTitle($localize`${this.title}`);
-    this.titleService.setTitle($localize`Victor Vaz - ${this.title}`);
+    this.headerTitle.setHeaderTitle(this.title);
+    this.titleService.setTitle(`Victor Vaz - ${this.title}`);
   }
 
 }

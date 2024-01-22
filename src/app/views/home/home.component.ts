@@ -14,7 +14,7 @@ export class HomeComponent {
     private headerTitle: HeaderTitleService,
     private titleService: Title
   ) {
-    this.headerTitle.setHeaderTitle($localize`${this.title}`);
-    this.titleService.setTitle($localize`Victor Vaz - ${this.title}`);
+    this.headerTitle.setHeaderTitle(this.title);
+    this.titleService.setTitle(`Victor Vaz - ${this.title}`);
   }
 }
