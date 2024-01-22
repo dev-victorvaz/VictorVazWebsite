@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { HeaderTitleService } from 'src/app/services/header-title.service';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
@@ -9,22 +10,25 @@ import { HeaderTitleService } from 'src/app/services/header-title.service';
 })
 export class SkillsComponent {
   title = 'Skills';
-  titlePt = 'Habilidades'
-  currentLanguage:string = '';
-  portugueseLanguage:string = 'pt';
+  titlePt = 'Habilidades';
+  currentLanguage: string = '';
+  portugueseLanguage: string = 'pt';
 
   constructor(
     private headerTitle: HeaderTitleService,
-    private titleService: Title
+    private titleService: Title,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {
-    this.currentLanguage = navigator.language;
-    if (this.currentLanguage.includes(this.portugueseLanguage)) {
-      this.headerTitle.setHeaderTitle(this.titlePt);
-      this.titleService.setTitle(`Victor Vaz - ${this.titlePt}`);
-    }
-    else {
-      this.headerTitle.setHeaderTitle(this.title);
-      this.titleService.setTitle(`Victor Vaz - ${this.title}`);
+    if (isPlatformBrowser(this.platformId)) {
+      this.currentLanguage = navigator.language;
+      if (this.currentLanguage.includes(this.portugueseLanguage)) {
+        this.headerTitle.setHeaderTitle(this.titlePt);
+        this.titleService.setTitle(`Victor Vaz - ${this.titlePt}`);
+      }
+      else {
+        this.headerTitle.setHeaderTitle(this.title);
+        this.titleService.setTitle(`Victor Vaz - ${this.title}`);
+      }
     }
   }
 
