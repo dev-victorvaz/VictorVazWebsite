@@ -19,6 +19,7 @@ div.skills-structure {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 4vh 0 0;
 
     div.skill-container {
         display: block;
@@ -33,5 +34,11 @@ div.skills-structure {
             height: fit-content;
             margin: 3px;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.skills-structure {
+        margin: 0 4vh 0 4vh;
     }
 }
