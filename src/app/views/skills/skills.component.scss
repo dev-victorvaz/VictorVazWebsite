@@ -16,14 +16,10 @@
 
 div.skills-structure {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin: 0 4vh 0 0;
 
     div.skill-container {
         display: block;
-        text-align: center;
         width: 90%;
         position: relative;
 
@@ -40,5 +36,12 @@ div.skills-structure {
 @media only screen and (max-width: 768px) {
     div.skills-structure {
         margin: 0 4vh 0 4vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        div.skill-container {
+            text-align: center;
+        }
     }
 }

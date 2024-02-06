@@ -65,6 +65,10 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+a {
+    color: var(--color-primary)
+}
+
 div.page-body {
     margin-left: 16vh;
     margin-top: 3vh;
