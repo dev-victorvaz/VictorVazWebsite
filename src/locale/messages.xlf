@@ -209,7 +209,7 @@
         <note priority="1" from="meaning">Text camp label</note>
       </trans-unit>
       <trans-unit id="contactTextInput" datatype="html">
-        <source>Ex. I wanted to contact you to...</source>
+        <source>Ex. I contacted to...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/contact/contact.component.html</context>
           <context context-type="linenumber">31</context>
@@ -318,7 +318,7 @@
         <source>Intermediary</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">My proficiency level in Angular</note>
         <note priority="1" from="meaning">Angular level</note>
@@ -327,7 +327,7 @@
         <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> I learned Angular at my college in the 4th period. I did some college work and started some projects with him. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">18,21</context>
+          <context context-type="linenumber">21,24</context>
         </context-group>
         <note priority="1" from="description">Description of my skill in Angular</note>
         <note priority="1" from="meaning">Angular content</note>
@@ -336,43 +336,25 @@
         <source>CERTIFICATE</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <note priority="1" from="description">Certificate button for Angular</note>
         <note priority="1" from="meaning">Angular certificate</note>
       </trans-unit>
-      <trans-unit id="sqlProficiency" datatype="html">
-        <source>Intermediary</source>
+      <trans-unit id="skillsProgrammingLanguageTitle" datatype="html">
+        <source>Programming languages:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
-        <note priority="1" from="description">My proficiency level in SQL</note>
-        <note priority="1" from="meaning">SQL level</note>
-      </trans-unit>
-      <trans-unit id="sqlContent" datatype="html">
-        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> I used SQL in the 2th and 5th perioed of college. Doing various exercises and a college assignment. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">42,45</context>
-        </context-group>
-        <note priority="1" from="description">Description of my skill in SQL</note>
-        <note priority="1" from="meaning">SQL content</note>
-      </trans-unit>
-      <trans-unit id="sqlCertificate" datatype="html">
-        <source>CERTIFICATE</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">48</context>
-        </context-group>
-        <note priority="1" from="description">Certificate button for SQL</note>
-        <note priority="1" from="meaning">SQL certificate</note>
+        <note priority="1" from="description">Skills programming language title</note>
+        <note priority="1" from="meaning">Skills programming language title</note>
       </trans-unit>
       <trans-unit id="javaProficiency" datatype="html">
         <source>Basic</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="description">My proficiency level in Java</note>
         <note priority="1" from="meaning">Java level</note>
@@ -381,7 +363,7 @@
         <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> I learned Java in the 2th period of college and used it in the 4th as well. I did a lot of exercises with Java. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">66,69</context>
+          <context context-type="linenumber">50,53</context>
         </context-group>
         <note priority="1" from="description">Description of my skill in Java</note>
         <note priority="1" from="meaning">Java content</note>
@@ -390,20 +372,56 @@
         <source>CERTIFICATE</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">56</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">108</context>
         </context-group>
         <note priority="1" from="description">Certificate button for Java</note>
         <note priority="1" from="meaning">Java certificate</note>
+      </trans-unit>
+      <trans-unit id="sqlProficiency" datatype="html">
+        <source>Intermediary</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">My proficiency level in SQL</note>
+        <note priority="1" from="meaning">SQL level</note>
+      </trans-unit>
+      <trans-unit id="sqlContent" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> I used SQL in the 2th and 5th period of college. Doing various exercises and a college assignment. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
+          <context context-type="linenumber">72,75</context>
+        </context-group>
+        <note priority="1" from="description">Description of my skill in SQL</note>
+        <note priority="1" from="meaning">SQL content</note>
+      </trans-unit>
+      <trans-unit id="sqlCertificate" datatype="html">
+        <source>CERTIFICATE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">Certificate button for SQL</note>
+        <note priority="1" from="meaning">SQL certificate</note>
+      </trans-unit>
+      <trans-unit id="skillsTechnologiesTitle" datatype="html">
+        <source>Technologies:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <note priority="1" from="description">Skills technologies title</note>
+        <note priority="1" from="meaning">Skills technologies title</note>
       </trans-unit>
       <trans-unit id="azureProficiency" datatype="html">
         <source>Basic</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">86</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">My proficiency level in Azure DevOps</note>
         <note priority="1" from="meaning">Azure DevOps level</note>
@@ -412,7 +430,7 @@
         <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> I learned Azure DevOps in the 4th period of college and did a college project with it. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/skills/skills.component.html</context>
-          <context context-type="linenumber">91,94</context>
+          <context context-type="linenumber">102,105</context>
         </context-group>
         <note priority="1" from="description">Azure DevOps of my skill in Azure DevOps</note>
         <note priority="1" from="meaning">Azure DevOps content</note>
