@@ -87,21 +87,21 @@
 <!-- Theme Switch -->
 <div class="theme-switch-container" id="themeSwitchId">
     <div class="theme-switch">
-        <button mat-button class="nav-button" (click)="toggleDarkMode()">
+        <button mat-button class="nav-button" (click)="toggleTheme('dark')">
             <ul>
                 <li><mat-icon>dark_mode</mat-icon></li>
                 <li i18n="Dark mode toggle|Toggle to dark mode|@@darkModeNav">Dark</li>
             </ul>
         </button>
     
-        <button mat-button class="nav-button" (click)="toggleLightMode()">
+        <button mat-button class="nav-button" (click)="toggleTheme('light')">
             <ul>
                 <li><mat-icon>light_mode</mat-icon></li>
                 <li i18n="Light mode toggle|Toggle to light mode|@@lightModeNav">Light</li>
             </ul>
         </button>
     
-        <button mat-button class="nav-button" (click)="toggleSystemMode()">
+        <button mat-button class="nav-button" (click)="toggleTheme('system')">
             <ul>
                 <li><mat-icon>invert_colors</mat-icon></li>
                 <li i18n="System mode toggle|Toggle to system mode|@@systemModeNav">System</li>

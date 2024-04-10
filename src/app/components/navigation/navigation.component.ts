@@ -31,16 +31,14 @@ export class NavigationComponent implements OnInit {
     this.pageContent = this.el.nativeElement.querySelector('#pageContent');
   }
 
-  toggleDarkMode(): void {
-    this.themeService.toggleDarkMode();
-  }
-
-  toggleLightMode(): void {
-    this.themeService.toggleLightMode();
-  }
-
-  toggleSystemMode(): void {
-    this.themeService.toggleSystemMode();
+  toggleTheme(theme:string): boolean {
+    if (this.themeService.toggleTheme(theme)) {
+      console.log("The theme has been changed successefully.")
+      return true;
+    } else {
+      console.log("Te theme was not changed due to an error.")
+      return false;
+    }
   }
 
   toggleMobileMenu(): void {

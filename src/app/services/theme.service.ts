@@ -7,6 +7,7 @@ export class ThemeService {
 
   constructor() { }
 
+/*
   toggleSwitchMode(): void {
     if (document.documentElement.classList.contains("light")) {
       document.documentElement.classList.remove("light");
@@ -22,6 +23,18 @@ export class ThemeService {
       }
     }
   }
+  */
+
+  toggleTheme(theme:string): boolean {
+    if (theme == "dark") {
+      this.toggleDarkMode();
+    } else if (theme == "light") {
+      this.toggleLightMode
+    } else {
+      this.toggleSystemMode();
+    }
+    return true;
+  }
 
   toggleDarkMode(): void {
     if (document.documentElement.classList.contains("light")) {
@@ -34,6 +47,7 @@ export class ThemeService {
         document.documentElement.classList.add("light");
       }
     }
+    localStorage.setItem("theme", "dark");
   }
 
   toggleLightMode(): void {
@@ -47,6 +61,7 @@ export class ThemeService {
         document.documentElement.classList.add("light");
       }
     }
+    localStorage.setItem("theme", "light");
   }
 
   toggleSystemMode(): void {
@@ -55,5 +70,6 @@ export class ThemeService {
     } else if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
     }
+    localStorage.removeItem("theme");
   }
 }
